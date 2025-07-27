@@ -13,25 +13,49 @@ body {
   padding: 0;
 }
 
+/* HEADER - use grid */
 header {
   background: var(--primary-color);
   color: white;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 1rem;
+  gap: 20px;
+  padding: 1rem 2rem;
 }
 
+/* Logo size */
 header .logo {
-  height: 60px;
+  height: 50px;
 }
 
-nav a {
+/* Header title */
+header h1 {
+  font-family: var(--heading-font);
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Nav ul flex layout */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+nav ul li a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
+  font-weight: bold;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
 .hero {
   position: relative;
 }
@@ -39,16 +63,6 @@ nav a {
 .hero img {
   width: 100%;
   height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  color: white;
-  font-family: var(--heading-font);
-  font-size: 3rem;
-  margin: 0;
 }
 
 .hero article {
@@ -67,6 +81,7 @@ nav a {
   margin-left: 1rem;
 }
 
+/* SECTION */
 section {
   padding: 2rem;
 }
@@ -74,22 +89,79 @@ section {
 section h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
-section img {
-  width: 18%;
-  margin: 0.5%;
+/* Adventure gallery - grid layout with background images */
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
+.adventure-gallery figure {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  color: var(--primary-color);
+  font-style: italic;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+/* Background images */
+.adventure1 {
+  background-image: url('images/adventure1.jpg');
+}
+
+.adventure2 {
+  background-image: url('images/adventure2.jpg');
+}
+
+.adventure3 {
+  background-image: url('images/adventure3.jpg');
+}
+
+.adventure4 {
+  background-image: url('images/adventure4.jpg');
+}
+
+.adventure5 {
+  background-image: url('images/adventure5.jpg');
+}
+
+/* FOOTER */
 footer {
   background: var(--primary-color);
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-footer a img {
-  width: 30px;
-  margin: 0 0.5rem;
-  text-decoration: none;
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Social icons aligned right */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a img {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
