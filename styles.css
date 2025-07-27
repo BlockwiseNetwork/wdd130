@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #1b4965;
+  --secondary-color: #cae9ff;
+  --accent1-color: #ffb703;
+  --accent2-color: #fb8500;
+  --heading-font: "Montserrat", sans-serif;
+  --text-font: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: var(--text-font);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header .logo {
+  height: 60px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: white;
+  font-family: var(--heading-font);
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 1rem;
+  max-width: 400px;
+}
+
+.hero article img {
+  float: right;
+  width: 80px;
+  margin-left: 1rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+section h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+section img {
+  width: 18%;
+  margin: 0.5%;
+}
+
+footer {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a img {
+  width: 30px;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
