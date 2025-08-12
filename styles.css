@@ -1,61 +1,238 @@
-/* General Styles */
+/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
   line-height: 1.6;
-}
-
-/* Header */
-header {
-  background-color: #005f73;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Main Section */
-main {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
-}
-
-main img {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
-}
-
-/* Paragraphs */
-p {
-  padding: 0;
-}
-
-/* Aside Section */
-aside {
-  width: 250px;
-  margin: 30px auto;
-  border: 1px solid #ccc;
-  padding: 15px;
-  background-color: #f9f9f9;
   color: #333;
-  text-align: center;
+  background-color: #f9f9f9;
 }
 
-aside img {
-  width: 200px;
-  height: auto;
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header nav {
+  background-color: #004080;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  padding: 15px 0;
   display: block;
-  margin: 0 auto 10px;
+  font-weight: bold;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+  background-color: #0077cc;
+  border-radius: 4px;
+}
+
+/* Hero Section (Home Page) */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 40px;
+  background-color: #e0f0ff;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.hero-text {
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+}
+
+/* Quote Section */
+.quote {
+  background-color: #f0f8ff;
+  padding: 30px 40px;
+  font-style: italic;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  border-left: 5px solid #0077cc;
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: bold;
+  color: #004080;
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: #fff;
+  padding: 30px 40px;
+  text-align: center;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.newsletter h2 {
+  margin-bottom: 15px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.newsletter button {
+  padding: 11px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #005fa3;
 }
 
 /* Footer */
 footer {
-  margin-top: 40px;
-  border-top: 2px solid #444;
+  background-color: #004080;
+  color: #fff;
   text-align: center;
-  padding: 10px;
-  background-color: #e0e0e0;
+  padding: 15px 0;
+  margin-top: 60px;
+}
+
+/* Trips Grid */
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.trip-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.trip-card h2 {
+  margin: 20px;
+  font-size: 1.5rem;
+  color: #004080;
+}
+
+.trip-card p {
+  margin: 0 20px 20px 20px;
+  flex-grow: 1;
+  color: #555;
+}
+
+.trip-card .btn {
+  margin: 0 20px 20px 20px;
+  align-self: start;
+}
+
+/* About page */
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.about h1 {
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.about p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+/* Responsive tweaks */
+@media(max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-text {
+    padding: 0;
+  }
+  .trips-grid {
+    padding: 20px;
+  }
 }

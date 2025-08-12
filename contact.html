@@ -3,136 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact Us | Whitewater Rafting</title>
-  <meta name="description" content="Contact Whitewater Thrills Rafting Co. for inquiries, reservations, and suggestions." />
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
-    rel="stylesheet"
-  />
-  <!-- Stylesheet -->
+  <title>Rafting Adventures - Contact Us</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Contact Rafting Adventures for questions and booking information." />
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Rafting Company Logo" class="logo" />
-    <h1>Whitewater Thrills Rafting Co.</h1>
     <nav>
-      <ul>
+      <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Company Information -->
-    <section class="company-info">
-      <h2>Contact Information</h2>
-      <address>
-        <p>123 River Road<br />Mountain Town, ST 12345</p>
-        <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
-        <p>Email: <a href="mailto:info@whitewaterthrills.com">info@whitewaterthrills.com</a></p>
-      </address>
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
 
-      <!-- Embedded Google Map -->
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086993731839!2d-122.41941528468154!3d37.77492977975869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085814bfa4b85f1%3A0x7f6f8b45062b8f40!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2s!4v1569999999999!5m2!1sen!2s"
-          width="600"
-          height="450"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Company Location on Google Maps"
-        ></iframe>
-      </div>
-    </section>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-    <!-- Employee Profiles -->
-    <section class="employees">
-      <h2>Meet Our Team</h2>
-      <div class="employee-gallery">
-        <figure>
-          <img src="images/employee1.jpg" alt="Emily Johnson" />
-          <figcaption>Emily Johnson - Lead Guide</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee2.jpg" alt="Michael Lee" />
-          <figcaption>Michael Lee - Safety Coordinator</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee3.jpg" alt="Sarah Patel" />
-          <figcaption>Sarah Patel - Customer Relations</figcaption>
-        </figure>
-      </div>
-    </section>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-    <!-- Contact Form -->
-    <section class="contact-form">
-      <h2>Contact Us</h2>
-      <form action="#" method="post" novalidate>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-
-        <fieldset>
-          <legend>Purpose of Message:</legend>
-          <div class="radio-group">
-            <input type="radio" id="general" name="purpose" value="General Inquiry" required />
-            <label for="general">General Inquiry</label>
-
-            <input type="radio" id="reservation" name="purpose" value="Reservation Question" />
-            <label for="reservation">Reservation Question</label>
-
-            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" />
-            <label for="suggestion">Website Suggestion</label>
-          </div>
-        </fieldset>
-
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <div class="form-group checkbox-group">
-          <input type="checkbox" id="subscribe" name="subscribe" />
-          <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-        </div>
-
-        <div class="form-group">
-          <button type="submit">Send Message</button>
-        </div>
-      </form>
-    </section>
+      <button type="submit">Send Message</button>
+    </form>
   </main>
 
   <footer>
-    <p>&copy; 2025 Whitewater Thrills Rafting Co. | Student: Testimony Edem</p>
-    <div class="social-icons">
-      <a href="https://facebook.com">
-        <img src="images/facebook.png" alt="Facebook" />
-      </a>
-      <a href="https://twitter.com">
-        <img src="images/twitter.png" alt="Twitter" />
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/instagram.png" alt="Instagram" />
-      </a>
-    </div>
-    <p>
-      <a href="path-to-wireframe-image-or-link" target="_blank" rel="noopener noreferrer">
-        View Contact Us Wireframe
-      </a>
-    </p>
+    <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rafting Adventures - Contact Us</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Contact Rafting Adventures for questions and booking information." />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rafting Adventures. All rights reserved.</p>
   </footer>
 </body>
 </html>
